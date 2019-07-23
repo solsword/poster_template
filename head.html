@@ -1,0 +1,103 @@
+<style>
+body {
+  margin: 0pt auto 0pt auto;
+  padding: 1in;
+  width: 36in;
+  height: 24in;
+  border: 2pt solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: sans-serif; /* TODO */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 0.5in;
+  flex-grow: 0;
+}
+
+header .title {
+  font-size: 120pt;
+  margin: 0pt 0pt 16pt 0pt;
+  padding: 0pt;
+}
+
+header p.author {
+  font-size: 72pt;
+  display: inline-block;
+  margin: 0pt 30pt 0pt 30pt;
+  padding: 0pt;
+}
+
+.body {
+  width: 100%;
+  margin: 0pt;
+  padding: 0pt;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 40pt;
+  line-height: 130%;
+  text-align: justify;
+}
+
+.body .smaller {
+  font-size: 34pt;
+}
+
+.body>div {
+  padding: 0pt 0.5in 0.5in 0.5in;
+  margin: 0pt;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 1pt;
+}
+
+.body>div:first-child {
+  border-right: 2pt solid black;
+}
+
+.body>div:last-child {
+  border-left: 2pt solid black;
+}
+
+.body>div p {
+  margin-top: 0pt;
+  margin-bottom: 24pt;
+}
+
+.body h1 { font-size: 64pt; font-weight: bold; }
+.body h2 { font-size: 58pt; font-weight: bold; }
+.body h3 { font-size: 52pt; font-weight: bold; }
+.body h4 { font-size: 48pt; font-weight: bold; }
+.body h5 { font-size: 44pt; font-weight: bold; }
+.body h6 { font-size: 42pt; font-weight: bold; }
+
+.body ul, .body ol {
+  margin: 32pt 0pt 32pt 0pt;
+    /*
+  margin-block-start: 32pt;
+  margin-block-end: 32pt;
+  margin-inline-start: 0pt;
+  margin-inline-end: 0pt;
+    */
+  padding-left: 56pt;
+}
+
+.body ul ul, .body ol ol, .body ul ol, .body ol ul {
+  margin: 0pt;
+}
+
+.body li {
+  margin: 16pt 0pt 16pt 0pt;
+}
+
+.fig {
+  text-align: center;
+  display: block;
+  margin: 24pt 0pt 24pt 0pt;
+  font-size: 36pt;
+}
+</style>
