@@ -6,7 +6,10 @@ head.html: poster.css
 %.html: %.md head.html
 	pandoc --standalone $< --include-in-header="head.html" -o $@
 
-TARGETS := $(shell find . -name "*.md" | sed -e "s/\.md/.html/g")
+TARGETS := $(shell \
+	find . -name "*.md" \
+	| grep -v "README.md$$" \
+	| sed -e "s/\.md/.html/g")
 
 .PHONY: all
 all: $(TARGETS)
